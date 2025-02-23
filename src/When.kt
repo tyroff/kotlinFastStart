@@ -19,10 +19,10 @@ fun main() {
     }
     println(season)
 
-    val temperature = 80
+    val temperature = 100
     val state: String = when {
         temperature < 0 -> "Твёрдое"
-        temperature < 100 -> "Жидкое"
+        temperature in 0..100 -> "Жидкое" // в диапазоне от нуля включительно до 100 включительно
         else -> "Газообразное"
     }
     println(state)
