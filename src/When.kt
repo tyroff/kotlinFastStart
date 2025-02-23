@@ -18,4 +18,12 @@ fun main() {
         }
     }
     println(season)
+
+    val temperature = 80
+    val state: String = when {
+        temperature < 0 -> "Твёрдое"
+        temperature < 100 -> "Жидкое"
+        else -> "Газообразное"
+    }
+    println(state)
 }
